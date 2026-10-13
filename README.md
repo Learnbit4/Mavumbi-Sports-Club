@@ -1,7 +1,7 @@
 # Mavumbi Sports Club Management System
 
 Desktop application (Python, PySide6) backed by MySQL. Built around one shared **Person** table and one
-append-only **ledger**, so total income is a query, not a formula maintained in many places.
+append-only **ledger**, so total income is a query.
 
 ## Modules
 | Tab | Does |
