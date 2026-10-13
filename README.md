@@ -16,9 +16,6 @@ append-only **ledger**, so total income is a query.
 
 Roles: **admin / manager** (everything), **clerk** (members, store), **patron** (members, events, equipment, football ops; cannot pay wages).
 
-## Upgrading an existing database
-Pull the new code, then run `python manage.py init-db` again. It only ADDS the new tables; existing data is untouched.
-
 ## Setup
 ```bash
 python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
