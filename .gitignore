@@ -1,0 +1,11 @@
+.env
+*.db
+mavumbi.log
+__pycache__/
+.pytest_cache/
+dist/
+build/
+.venv/
+venv/
+.idea/
+*.log
