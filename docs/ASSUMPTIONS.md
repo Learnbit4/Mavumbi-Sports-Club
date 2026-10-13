@@ -4,7 +4,7 @@ The case study is silent or ambiguous on these points. Each is a decision; chang
 
 | # | Gap | Decision | Where |
 |---|---|---|---|
-| 1 | Equipment loaned to teams is not in the store price list | Separate `equipment` table with sport, market value, quantities. **Market values are SAMPLE figures: replace with real prices** | `seed.py` |
+| 1 | Equipment loaned to teams is not in the store price list | Separate `equipment` table with sport, market value, quantities. **Market values are SAMPLE figures:  | `seed.py` |
 | 2 | "Total income" undefined | Gross = membership + store sales + merchandise + facilitation + surcharges + tickets + sponsorship. Net = gross minus patron commission | `ledger.summary` |
 | 3 | Fan, jersey, ticket and sponsor income is not in the case study | Added as extra ledger categories (scope extension chosen by the project owner). Fan merchandise prices are SAMPLE values | `store`, `events`, `commercial` |
 | 4 | Surcharge split rule | Equal split across the event's whole team including the captain; leftover cents go to the captain | `rules.split_evenly` |
