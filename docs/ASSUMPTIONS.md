@@ -6,7 +6,7 @@ The case study is silent or ambiguous on these points. Each is a decision; chang
 |---|---|---|---|
 | 1 | Equipment loaned to teams is not in the store price list | Separate `equipment` table with sport, market value, quantities. **Market values are SAMPLE figures:  | `seed.py` |
 | 2 | "Total income" undefined | Gross = membership + store sales + merchandise + facilitation + surcharges + tickets + sponsorship. Net = gross minus patron commission | `ledger.summary` |
-| 3 | Fan, jersey, ticket and sponsor income is not in the case study | Added as extra ledger categories (scope extension chosen by the project owner). Fan merchandise prices are SAMPLE values | `store`, `events`, `commercial` |
+| 3 | Fan, jersey, ticket and sponsor income  | Added as extra ledger categories. Fan merchandise prices are SAMPLE values | `store`, `events`, `commercial` |
 | 4 | Surcharge split rule | Equal split across the event's whole team including the captain; leftover cents go to the captain | `rules.split_evenly` |
 | 5 | Lost vs damaged equipment | Both are written off the club's quantity and both are surcharged at market value + 10% | `equipment.return_issue` |
 | 6 | Surcharge income timing | Booked when the member pays, not when charged | `equipment.pay_surcharge` |
@@ -29,7 +29,5 @@ The case study is silent or ambiguous on these points. Each is a decision; chang
 | 23 | League points | 3 for a win, 1 for a draw, labelled "Pts (3-1-0)". Other sports may score differently | `rules.league_points` |
 | 24 | Squad membership | Not enforced against a member's 3 chosen games or against contracts; a squad is an organising list | `football.add_to_squad` |
 
-## Not built (yet)
-Training schedules, transfers, player ratings, own-goal tracking, academy tracking, online fan portal / web
-ticketing, payroll and expenses beyond patron commission, member self-service, automatic M-Pesa integration,
-database backups (use `mysqldump` on a schedule), and an in-app user-management screen (use `manage.py create-user`).
+
+
